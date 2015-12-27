@@ -1,9 +1,15 @@
-echo "Hello Bat World!"
-echo "This is a test!"
-bitsadmin /transfer myDownloadJob /download /priority normal http://www.rividium.com/images/testing1.jpg %~dp0downloaded_file.jpg
-rem client = new-object System.Net.WebClient
-
-rem client.DownloadFile("http://www.rividium.com/images/testing1.jpg", "%~dp0downloaded_file.jpg")
-REM echo %~dp0downloaded_file.jpg
+@echo off
+echo Hello .bat World!>CON
+echo.
+echo Let's download a file?>CON
+echo.
+echo (Press cntrl-c to cancel.)>CON
+echo.
 pause
-REM cmd /K
+bitsadmin /transfer myDownloadJob /download /priority normal http://www.rividium.com/images/testing1.jpg %~dp0downloaded_file.jpg
+echo.
+echo Download attempt finished.>CON
+echo.
+echo Have a nice day and, Happy Coding!>CON
+echo.
+pause
