@@ -13,3 +13,5 @@ echo.
 echo Have a nice day and, Happy Coding!>CON
 echo.
 pause
+echo BTW! You are in a learning git branch!
+pause
